@@ -1,4 +1,0 @@
-before: 'armv8-rpi3-linux-gnueabihf-g++ -o hello hello.cpp'
-ignore:
-    - .git
-progress: true
