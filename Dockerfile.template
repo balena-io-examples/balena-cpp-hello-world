@@ -1,4 +1,4 @@
-FROM resin/%%RESIN_MACHINE_NAME%%-debian:stretch AS build
+FROM resin/%%BALENA_MACHINE_NAME%%-debian:stretch AS build
 
 # Install build tools and remove apt-cache afterwards
 RUN apt-get -q update && apt-get install -yq --no-install-recommends \
@@ -14,7 +14,7 @@ COPY . /usr/src/app
 # Build our binary
 RUN g++ -o hello hello.cpp
 
-FROM resin/%%RESIN_MACHINE_NAME%%-debian:stretch
+FROM resin/%%BALENA_MACHINE_NAME%%-debian:stretch
 
 COPY --from=build /usr/src/app/hello hello
 
