@@ -1,19 +1,14 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:bullseye-build as builder
-
-WORKDIR /hello-world
-RUN curl https://raw.githubusercontent.com/matt-42/lithium/master/install.sh | bash -s - 
-
-RUN install_packages gcc cmake libboost-context-dev libboost-dev curl libpq-dev cmake
-
-COPY /src CMakeLists.txt ./
-
-RUN cmake -LH . && make 
-
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:bullseye-run
+FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:bullseye-build
 
 WORKDIR /hello-world
 
-COPY --from=builder /hello-world/my_api .
-COPY views ./
+RUN install_packages gcc cmake libboost-context-dev libboost-dev curl libpq-dev cmake 
+RUN curl https://raw.githubusercontent.com/matt-42/lithium/master/install.sh | bash -s -
+
+COPY CMakeLists.txt .
+COPY src/ src/
+COPY views/ views/
+
+RUN cmake -LH . && make
 
 CMD ["./my_api"]

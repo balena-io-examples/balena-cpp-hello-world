@@ -13,7 +13,7 @@ include_directories(${CURL_INCLUDE_DIRS} ${OPENSSL_INCLUDE_DIR})
 set(LIBS ${CURL_LIBRARIES} ${Boost_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES})
 
 # Directory where lithium headers are located if not in the default include path.
-include_directories(include/)
+include_directories(./include/)
 
 add_custom_target(symbols_generation COMMAND bin/li_symbol_generator ${CMAKE_CURRENT_SOURCE_DIR})
 
