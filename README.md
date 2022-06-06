@@ -1,25 +1,25 @@
-# balena C++ Hello world
+# A Simple Server with C++ Lithium
 
-This is a very simple project that is an example of how to run [C++][cpp] code on
-a [balena][balena-link] device.
+[![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balena-io-examples/balena-cpp-hello-world)
 
-### balena Setup & Deployment
+This is a simple skeleton C++ server project that works on any of the [devices supported][devices-supported] by [balena][balena-link].
 
-To get this project up and running, you will need to signup for a balena account
-[here][signup-page] and set up an application and device. You'll find full
-details in our [Getting Started tutorial][gettingStarted-link].
+This project serves up a welcome page on port `:80` of your balena device.
 
-Once you have downloaded this project, you can `balena push` this example using the
-[balenaCLI][balena-cli]. This command will package up and push the code to the
-balena builders, where it will be compiled and built and deployed to every
-device in the application fleet. When it completes, you'll have your C++ code
-running on your device and see some logs on your [balenaCloud
-dashboard][balena-dashboard].
+To get this project up and running, you will need to [sign-up][signup-page] for a balena account. Have a look at our [Getting Started tutorial][gettingStarted-link] to help you kickstart your journey in creating a fleet of devices. Once you are set up with balena, you will need to clone or download this repository. 
 
-[cpp]:https://www.cplusplus.com/
-[balena-link]:https://balena.io/ 
-[go]:https://golang.org/
-[signup-page]:https://dashboard.balena-cloud.com/signup
-[gettingStarted-link]:https://www.balena.io/docs/learn/getting-started/raspberrypi3/cpp/
+After downloading, navigate to the directory and run the `balena push` command using the [balena CLI][balena-cli]. This command will package up and push the code to the balena builders, where it will be compiled, built and deployed to every device in the fleet. When it completes, you'll have a C++ powered web server running on your device and you can see some logs on your [device dashboard][balena-dashboard].
+
+```bash
+cd balena-cpp-hello-world/
+balena push <FLEET_NAME>
+```
+
+To give your device a public URL, access the device page on the [balenaCloud dashboard][balena-dashboard], and choose the _Public Device URL_ toggle. Once the device is updated, check the Public Device URL to find the welcome page showing up from your device. That's it, you have deployed your first balena device!
+
 [balena-cli]:https://www.balena.io/docs/reference/cli/
 [balena-dashboard]:https://dashboard.balena-cloud.com/
+[balena-link]:https://balena.io/ 
+[devices-supported]:https://www.balena.io/docs/reference/hardware/devices/
+[gettingStarted-link]:https://www.balena.io/docs/learn/getting-started/raspberrypi3/rust/
+[signup-page]:https://dashboard.balena-cloud.com/signup
