@@ -1,0 +1,102 @@
+- commits:
+    - subject: "patch: replace balenaCI with flowzone"
+      hash: 7480e466c0c18a62553ee3e77ea2ffab91a929f1
+      body: ""
+      footer:
+        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+      author: Vipul Gupta (@vipulgupta2048)
+      nested: []
+  version: 1.0.2
+  title: ""
+  date: 2022-11-07T11:07:20.024Z
+- version: 1.0.1
+  date: 2022-06-22T13:23:37Z
+  commits:
+    - hash: 6b9625e9d4bfaa7655b0de3a06e6fec44d290f57
+      author: Vipul Gupta (@vipulgupta2048)
+      footers:
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+      subject: "patch: Convert balenaHub fleet to app"
+      body: null
+    - hash: 2e14a0bb47bab1e071ec3814e2dc0d5ea7c08d9e
+      author: Vipul Gupta (@vipulgupta2048)
+      footers:
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+      subject: "patch: Add logo for balenaHub"
+      body: null
+- version: 1.0.0
+- date: 2022-06-06T13:38:28Z
+- commits:
+    - hash: 437b8fac2ab6ac625bc4f8b60dcc668b38a199f0
+- commits:
+    - author: Vipul Gupta (@vipulgupta2048)
+- commits:
+    - footers:
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+- commits:
+    - subject: "major: Upgrade Getting Started experience"
+- commits:
+    - body: null
+- commits:
+    - hash: d05ba4b263f00a97392746baec6a0ec4f136e426
+- commits:
+    - author: Vipul Gupta (@vipulgupta2048)
+- commits:
+    - footers:
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+- commits:
+    - subject: Add README and balena.yml
+- commits:
+    - body: null
+- version: 0.0.2
+- date: 2021-02-24T16:49:24Z
+- commits:
+    - hash: 62322389b694edd7d7bea2fe422dbcff5739743a
+- commits:
+    - author: Tomás Tormo
+- commits:
+    - footers:
+        change-type: patch
+- commits:
+    - footers:
+        signed-off-by: Tomás Tormo <tomast@balena.io>
+- commits:
+    - subject: Add project type in repo.yml
+- commits:
+    - body: null
+- commits:
+    - hash: 8123509710060438ba154f156903057da2f6151e
+- commits:
+    - author: Vipul Gupta
+- commits:
+    - subject: Update README.md
+- commits:
+    - body: null
+- commits:
+    - hash: 5719f64a4347d48f8942e7ec821470f6615adf80
+- commits:
+    - author: Vipul Gupta (@vipulgupta2048)
+- commits:
+    - footers:
+        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipul@balena.io>
+- commits:
+    - subject: Replace resin with balenalib
+- commits:
+    - body: null
+- commits:
+    - hash: 8e1e3a5e3b9a998c09d9d8c49a78c21b74436ad3
+- commits:
+    - author: Shaun Mulligan
+- commits:
+    - subject: use multi-stage docker build|
+- commits:
+    - body: null
+- commits:
+    - hash: 028601b2b5c6b38027c10d70c77f4ba58b566d99
+- commits:
+    - author: Shaun Mulligan
+- commits:
+    - subject: update to resin.io standards
+- commits:
+    - body: null
