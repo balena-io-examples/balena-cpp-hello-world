@@ -1,4 +1,14 @@
 - commits:
+    - subject: "patch: Add support for external contributors"
+      hash: 3f364e5a06463bf72510cb02e5af57c8cbb635d9
+      body: ""
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 1.0.3
+  title: ""
+  date: 2024-04-03T06:24:45.275Z
+- commits:
     - subject: "patch: replace balenaCI with flowzone"
       hash: 7480e466c0c18a62553ee3e77ea2ffab91a929f1
       body: ""
