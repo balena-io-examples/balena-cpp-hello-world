@@ -1,4 +1,4 @@
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian:bullseye-build
+FROM balenalib/%%BALENA_ARCH%%-debian:latest-build
 
 WORKDIR /hello-world
 
