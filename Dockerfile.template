@@ -1,8 +1,8 @@
-FROM balenalib/%%BALENA_ARCH%%-debian:latest-build
+FROM debian:bookworm-slim
 
 WORKDIR /hello-world
 
-RUN install_packages gcc cmake libboost-context-dev libboost-dev curl libpq-dev cmake 
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential libboost-context-dev libboost-dev libpq-dev cmake curl libcurl4-openssl-dev
 RUN curl https://raw.githubusercontent.com/matt-42/lithium/master/install.sh | bash -s -
 
 COPY CMakeLists.txt .
