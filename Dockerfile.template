@@ -2,7 +2,14 @@ FROM debian:bookworm-slim
 
 WORKDIR /hello-world
 
-RUN apt-get update && apt-get install -y --no-install-recommends build-essential libboost-context-dev libboost-dev libpq-dev cmake curl libcurl4-openssl-dev
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential ca-certificates git libboost-context-dev libboost-dev libpq-dev cmake curl libcurl4-openssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Enable pipefail flag to avoid masking curl failures in piped command
+# https://github.com/hadolint/hadolint/wiki/DL4006
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 RUN curl https://raw.githubusercontent.com/matt-42/lithium/master/install.sh | bash -s -
 
 COPY CMakeLists.txt .
